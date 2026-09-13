@@ -3,6 +3,10 @@ export const heroMotion = {
     duration: 1.9,
     ease: [0.22, 1, 0.36, 1] as const,
   },
+  image: {
+    duration: 2.2,
+    ease: [0.22, 1, 0.36, 1] as const,
+  },
   content: {
     duration: 1.1,
     delay: 0.35,

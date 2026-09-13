@@ -2,11 +2,9 @@
 
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { registerScrollTrigger } from '@/lib/gsap';
 
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger);
-}
+registerScrollTrigger();
 
 export default function Reveal({ children }: { children: React.ReactNode }) {
   useEffect(() => {

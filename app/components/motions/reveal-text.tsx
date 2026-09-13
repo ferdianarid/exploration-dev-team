@@ -11,12 +11,10 @@ import {
 import { Fragment, useRef } from "react"
 
 const STATEMENT =
-  "Animation should never make you wait. It should reveal the next idea at exactly the moment you are ready to read it."
+  "The mountains invite us to slow down, look farther, and find the extraordinary beyond the familiar."
 const START_OPACITY = 0.15
 const SPREAD = 0.85
 const WORD_DURATION = 0.26
-
-
 
 const REVEAL_END_THRESHOLD = 0.1
 
@@ -85,9 +83,6 @@ export default function TextScrollWordReveal() {
     offset: ["start 0.1", "end 0.9"],
   })
 
-  
-  
-  
   const revealProgress = useTransform(
     scrollYProgress,
     [0, REVEAL_END_THRESHOLD],
@@ -118,7 +113,7 @@ export default function TextScrollWordReveal() {
             </div>
 
             <div className="scroll-word-reveal__content">
-              <p className="scroll-word-reveal__kicker">Scroll to reveal</p>
+              <p className="scroll-word-reveal__kicker">The journey begins here</p>
               <h1
                 id="scroll-word-reveal-heading"
                 className="scroll-word-reveal__heading"
